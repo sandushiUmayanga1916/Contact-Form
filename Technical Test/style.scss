@@ -1,0 +1,170 @@
+html, body, div, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 768px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.container {
+    flex: 1;
+    padding: 0px;
+    width: 786px /* Left side takes width */
+}
+
+.image-logo img {
+    position: relative;
+    top: 81px;
+    left: 139px;
+    width: 76px;
+    height: 76px;
+
+    background: transparent url('img/Logo.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+h1 {
+    position: relative;
+    top: 112px;
+    left: 139px;
+    width: 471px;
+    height: 55px;
+
+    text-align: left;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 52px;
+    font-family: 'Manrope';
+    letter-spacing: 0px;
+    color: #05253C;
+    opacity: 1;
+}
+
+form {
+    position: absolute;
+    left: 139px;
+    top: 273px;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 15px;
+            text-align: left;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 28px;
+            font-family: 'Plus Jakarta Sans';
+            letter-spacing: 0px;
+            color: #05253C;
+            opacity: 1;
+        
+        }
+
+        .form-control {
+            width: 444px;
+            height: 15px;
+            margin-bottom: 35px;
+            
+            text-align: left;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 12px;
+            line-height: 24px;
+            font-family: 'Plus Jakarta Sans';
+            letter-spacing: 0px;
+            color: #05253C;;
+            opacity: 1;
+            border-top: none;              
+            border-right: none;             
+            border-left: none;              
+            border-bottom-width: 1px;       
+            border-bottom-style: solid;     
+            border-bottom-color: #EBEBEB;   
+            background: transparent;
+            
+        
+        }
+
+        .error {
+            width: 244px;
+            height: 15px;
+            top: 251px;
+            position:absolute;
+            left: 338px;
+
+            font-weight: normal;
+            font-style: normal;
+            font-size: 12px;
+            line-height: 24px;
+            font-family: 'Plus Jakarta Sans';
+          }
+    }
+}
+
+
+.btn {
+    
+    margin-bottom: 55px;
+    left: 139px;
+    width: 168px;
+    height: 45px;
+
+    background: #FFDC47 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0px;
+    left: 783px;
+    width: 583px;
+    height: 768px;
+
+    background: transparent url('img/jordan-steranka-lpddCskeg4A-unsplash.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    flex: 1;
+    text-align: right;
+    width: 583px /* Right side takes width */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.slideInFromLeft {
+    animation-name: slideInFromLeft;
+}
